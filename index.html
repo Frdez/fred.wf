@@ -46,7 +46,10 @@
     <section class="background2"></section>
 
     <section id="aboutme">
-      <h2>about.</h2>
+      <div class="circle"></div>
+      <div class="headbox">
+        <h2>about.</h2>
+      </div>
       <hr>
       <div class="aboutme flex row">
         <div class="">
@@ -73,22 +76,24 @@
     <section class="background3"></section>
 
     <section id="contact">
-      <div class="circle"></div>
-      <div class="flex row">
+      <div class="headbox">
+        <h2>contact.</h2>
+      </div>
+      <hr>
+      <div class="contactme flex row">
         <div class="left-side">
-          <h2>contact.</h2>
-          <p>Phone: <span>+45 24 62 31 55</span></p>
-          <p>Email: <span>developer@fred.wf</span></p>
-          <p>Website: <span>www.fred.wf</span></p>
-          <p>Address: <span>Hidden</span></p>
+          <p><span style="font-weight: 700;">Phone: </span><span>+45 24 62 31 55</span></p>
+          <p><span style="font-weight: 700;">Email: </span><span>developer@fred.wf</span></p>
+          <p><span style="font-weight: 700;">Website: </span><span>www.fred.wf</span></p>
+          <p><span style="font-weight: 700;">Address: </span><span>~hidden~</span></p>
         </div>
         <div class="right-side">
-          <form id="form" class="topBefore">
-            <input id="name" type="text" placeholder="Navn">
+          <form id="form" class="topBefore flex column">
+            <input id="name" type="text" placeholder="Name">
             <input id="email" type="text" placeholder="E-mail">
-            <input id="tlf" type="text" placeholder="Telefon">
-            <textarea id="message" placeholder="Besked.."></textarea>
-            <input id="submit" type="submit" value="GO!">
+            <input id="tlf" type="text" placeholder="Phone">
+            <textarea id="message" placeholder="Message.."></textarea>
+            <input id="submit" type="submit" value="Send request">
           </form>
         </div>
       </div>

@@ -115,10 +115,16 @@ li a:hover {
   height: 50vh;
 }
 #aboutme h2{
-  text-align: center;
+  text-align: left;
   font-size: 40px;
   margin-bottom: 20px;
   margin-top: 50px;
+
+}
+.headbox {
+  width: 900px;
+  margin: auto;
+  display: block;
 }
 .aboutme {
   justify-content: center;
@@ -134,6 +140,19 @@ li a:hover {
   width: 430px;
   margin-left: 20px;
 }
+
+.circle {
+  background-image: url(../img/profilepicture.jpg);
+  background-size: cover;
+  border: 10px solid white;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 50vw;
+  transform: translate(-50%, 0%);
+  margin-top: -160px;
+}
 /* background3  */
 .background3 {
   height: 60vh;
@@ -144,20 +163,45 @@ li a:hover {
 }
 /* contact  */
 #contact {
-  height: 60vh;
+  height: 50vh;
 }
 
-.circle {
-  background-image: url(../img/profilepicture.jpg);
-  background-size: cover;
-  border: 10px solid white;
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  position: absolute;
-  left: 50vw;
-  transform: translate(-50%, 0%);
-  margin-top: -125px;
+#contact h2{
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.contactme {
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.left-side {
+  width: 450px;
+}
+
+.right-side {
+  width: 450px;
+}
+
+input {
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #DE5021;
+  outline: none;
+  font-weight: 700;
+}
+
+textarea {
+  outline: none;
+  height: 80px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #DE5021;
+  font-weight: 700;
 }
 
 /* footer  */
@@ -166,12 +210,13 @@ li a:hover {
   text-align: center;
   color: black;
   background-color: white;
-  border-top: 1px solid black;
+  border-top: 1px solid #DE5021;
 }
 
 hr {
-  width: 50%;
+  width: 900px;
   border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  height: 5px;
+  background: #DE5021;
+
 }
