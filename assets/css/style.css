@@ -2,3 +2,170 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
+
+.flex {
+  display: flex;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+#header {
+  height: 100vh;
+  width: 100%;
+  background: url("../img/city.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#header h1 {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  color: white;
+}
+
+#logo {
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-top: 10vh;
+  position: absolute;
+  left: 50vw;
+  transform: translate(-40%, 0%);
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+ul {
+
+}
+
+li {
+  display: inline;
+  margin-left: 200px;
+}
+
+li:first-child {
+  margin-left: 0;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+  cursor: pointer;
+}
+
+li a:hover {
+  color: #DE5021;
+}
+
+/* projects */
+#projects {
+  height: 60vh;
+  overflow: hidden;
+}
+
+.boxes {
+  height: 60vh;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 350px;
+  width: 350px;
+  background-color: black;
+}
+
+/* background2 */
+.background2 {
+  height: 55vh;
+  background-image: url(../img/stairs.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+/* about me  */
+#aboutme {
+  height: 50vh;
+}
+#aboutme h2{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.aboutme {
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.p1 {
+  width: 430px;
+  margin-right: 20px;
+}
+
+.p2 {
+  width: 430px;
+  margin-left: 20px;
+}
+/* background3  */
+.background3 {
+  height: 60vh;
+  background-image: url(../img/chairs.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:bottom;
+}
+/* contact  */
+#contact {
+  height: 60vh;
+}
+
+.circle {
+  background-image: url(../img/profilepicture.jpg);
+  background-size: cover;
+  border: 10px solid white;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  left: 50vw;
+  transform: translate(-50%, 0%);
+  margin-top: -125px;
+}
+
+/* footer  */
+#footer {
+  height: 5vh;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-top: 1px solid black;
+}
+
+hr {
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
