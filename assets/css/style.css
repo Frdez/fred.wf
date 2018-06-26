@@ -79,24 +79,64 @@ li a:hover {
 
 /* projects */
 #projects {
-  height: 60vh;
+  height: 70vh;
   overflow: hidden;
 }
 
 #projects h2 {
-  text-align: center;
+  text-align: left;
   font-size: 40px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .boxes {
+  width: 900px;
   height: 50vh;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .box {
+  height: 350px;
+  width: 250px;
+  background-image: url(../img/floatingisland.png);
+  background-size: contain;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.box:hover {
+  transform: scale(0.95);
+}
+
+.description {
+  background: white;
+  width: 250px;
+  height: 150px;
+  margin-top: 200px;
+}
+.description h3 {
+  padding: 10px 0 0 10px;
+}
+.description p {
+  padding-left: 10px;
+}
+.description button {
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  border: none;
+  background: white;
+  outline: none;
+}
+
+.box2 {
   height: 350px;
   width: 350px;
   background-color: black;
