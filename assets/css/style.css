@@ -82,8 +82,14 @@ li a:hover {
   overflow: hidden;
 }
 
+#projects h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
 .boxes {
-  height: 60vh;
+  height: 50vh;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
