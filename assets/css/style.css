@@ -81,6 +81,7 @@ li a:hover {
 #projects {
   height: 70vh;
   overflow: hidden;
+  width: 100%;
 }
 
 #projects h2 {
@@ -92,11 +93,12 @@ li a:hover {
 
 .boxes {
   width: 900px;
-  height: 50vh;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
+  margin-top: 80px;
 }
 
 .box {
@@ -153,7 +155,9 @@ li a:hover {
 
 /* about me  */
 #aboutme {
-  height: 50vh;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
 }
 #aboutme h2{
   text-align: left;
@@ -168,8 +172,10 @@ li a:hover {
   display: block;
 }
 .aboutme {
+  flex-direction: row;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .p1 {
@@ -191,8 +197,7 @@ li a:hover {
   width: 200px;
   position: absolute;
   left: 50vw;
-  transform: translate(-50%, 0%);
-  margin-top: -160px;
+  transform: translate(-50%, -50%);
 }
 /* background3  */
 .background3 {
@@ -204,7 +209,9 @@ li a:hover {
 }
 /* contact  */
 #contact {
-  height: 50vh;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 #contact h2{
@@ -215,12 +222,16 @@ li a:hover {
 }
 
 .contactme {
+  flex-direction: row;
   justify-content: center;
   margin-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .left-side {
   width: 450px;
+  text-align: left;
 }
 
 .right-side {
@@ -260,4 +271,96 @@ hr {
   height: 5px;
   background: #DE5021;
 
+}
+
+@media only screen and (max-width: 768px) {
+  li {
+    display: inherit;
+    margin-left: 0;
+  }
+  ul {
+    margin-top: 200px;
+    padding-left: 0;
+  }
+  #projects h2 {
+    text-align: left;
+    margin-left: 35px;
+  }
+  #projects {
+    width: 100%;
+    height: auto;
+  }
+  hr {
+    width: 80%;
+  }
+  .boxes {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .box {
+    margin-top: 50px;
+  }
+  .box:first-child {
+    margin-top: 0;
+  }
+  #aboutme {
+    height: 130vh;
+  }
+  .aboutme {
+    flex-direction: column;
+  }
+  #logo {
+    transform: translate(-50%, 0%);
+  }
+  #contact {
+    height: auto;
+  }
+  #contact h2 {
+    margin-left: 35px;
+  }
+  .contactme {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .left-side {
+    width: auto;
+    margin-top: 0;
+    text-align: center;
+  }
+  .right-side {
+    margin-bottom: 30px;
+  }
+  input {
+    margin-top: 10px;
+    width: 60%;
+    text-align: center;
+    margin-left: 12%;
+  }
+  textarea {
+    margin-left: 12%;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 60%;
+  }
+  #aboutme {
+    height: auto;
+  }
+  #aboutme h2 {
+    margin-top: 110px;
+    margin-left: 35px;
+  }
+  .aboutme {
+  flex-direction: column;
+  }
+  .p2 {
+    width: 80%;
+    margin-left: 35px;
+  }
+  .p1 {
+    width: 80%;
+    margin-left: 35px;
+    padding-right: 35px;
+  }
 }
