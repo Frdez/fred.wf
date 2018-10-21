@@ -79,9 +79,11 @@ li a:hover {
 
 /* projects */
 #projects {
-  height: 70vh;
+  height: auto;
+  margin: auto;
+  display: block;
   overflow: hidden;
-  width: 100%;
+  width: 56%;
 }
 
 #projects h2 {
@@ -92,13 +94,15 @@ li a:hover {
 }
 
 .boxes {
-  width: 900px;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
   margin-top: 80px;
+  flex-flow: wrap;
+  margin-bottom: 60px;
 }
 
 .box {
@@ -111,6 +115,7 @@ li a:hover {
   box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
   transform: scale(1);
   transition: all 0.5s;
+  flex-flow: wrap;
 }
 
 .box:hover {
@@ -167,7 +172,6 @@ li a:hover {
 
 }
 .headbox {
-  width: 900px;
   margin: auto;
   display: block;
 }
@@ -210,8 +214,9 @@ li a:hover {
 /* contact  */
 #contact {
   height: auto;
-  width: 100%;
+  width: 56%;
   overflow: hidden;
+  margin: auto;
 }
 
 #contact h2{
@@ -266,11 +271,101 @@ textarea {
 }
 
 hr {
-  width: 900px;
+  width: 100%;
   border: 0;
   height: 5px;
   background: #DE5021;
 
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 56%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: -20px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: -20px;
+}
+
+.prev:hover, .next:hover {
+  background-color:  #DE5021;
+  color: white;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 @media only screen and (max-width: 768px) {
@@ -294,13 +389,16 @@ hr {
     width: 80%;
   }
   .boxes {
-    width: 100%;
-    flex-direction: column;
+    /* width: 100%; */
+    /* flex-direction: column; */
     margin-top: 30px;
     margin-bottom: 50px;
   }
   .box {
     margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
   .box:first-child {
     margin-top: 0;
@@ -316,6 +414,7 @@ hr {
   }
   #contact {
     height: auto;
+    width: 100%;
   }
   #contact h2 {
     margin-left: 35px;
@@ -346,6 +445,10 @@ hr {
   }
   #aboutme {
     height: auto;
+    width: 100%;
+  }
+  .slideshow-container {
+    max-width: 108%;
   }
   #aboutme h2 {
     margin-top: 110px;
