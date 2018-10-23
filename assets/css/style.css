@@ -74,7 +74,7 @@ li a {
 }
 
 li a:hover {
-  color: #DE5021;
+  color: darkslategray;
 }
 
 /* projects */
@@ -177,7 +177,7 @@ li a:hover {
 }
 .aboutme {
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -228,38 +228,31 @@ li a:hover {
 
 .contactme {
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 50px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
+  align-items: center;
 }
 
 .left-side {
-  width: 450px;
+  width: 100%;
   text-align: left;
 }
 
 .right-side {
-  width: 450px;
+  width: 100%;
+}
+.right-side i {
+  font-size: 40px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
-input {
-  height: 30px;
-  margin-top: 10px;
-  border: none;
-  border-bottom: 1px solid #DE5021;
-  outline: none;
-  font-weight: 700;
+.socialmedia {
+  text-align: right
 }
 
-textarea {
-  outline: none;
-  height: 80px;
-  margin-top: 10px;
-  border: none;
-  border-bottom: 1px solid #DE5021;
-  font-weight: 700;
-}
 
 /* footer  */
 #footer {
@@ -267,14 +260,14 @@ textarea {
   text-align: center;
   color: black;
   background-color: white;
-  border-top: 1px solid #DE5021;
+  border-top: 1px solid darkslategray;
 }
 
 hr {
   width: 100%;
   border: 0;
   height: 5px;
-  background: #DE5021;
+  background: darkslategray;
 
 }
 
@@ -465,5 +458,8 @@ hr {
     width: 80%;
     margin-left: 35px;
     padding-right: 35px;
+  }
+  .socialmedia {
+    text-align: center;
   }
 }
